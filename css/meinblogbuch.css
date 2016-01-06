@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  background: #f2f5f8;
+  color: #456;
+  font-family: Georgia, sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+a {
+  color: #c46;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+a:hover {
+  box-shadow: 0 1px 0 0 currentColor;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}

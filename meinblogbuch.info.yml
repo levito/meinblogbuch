@@ -1,0 +1,8 @@
+name: Mein Blogbuch
+type: theme
+description: 'Für meine Laura'
+base theme: false
+libraries:
+  - meinblogbuch/global-styling
+version: '1.0.0'
+core: '8.x'
