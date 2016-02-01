@@ -1,35 +1,96 @@
 html {
   box-sizing: border-box;
-  background: #f2f5f8;
-  color: #456;
-  font-family: Georgia, sans-serif;
-  line-height: 1.5;
-}
+  background: #ecf2f9;
+  color: #435465;
+  font-family: Crimson Text, Georgia, sans-serif;
+  font-size: 20px;
+  line-height: 1.5; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 980px;
-}
+  box-sizing: inherit; }
 
 a {
-  color: #c46;
+  color: #ca5;
   text-decoration: none;
-  transition: all .2s;
-}
-
-a:hover {
-  box-shadow: 0 1px 0 0 currentColor;
-}
+  transition: box-shadow .2s; }
+  a:hover {
+    box-shadow: 0 1px 0 0 currentColor; }
 
 button,
 input,
 textarea {
   font: inherit;
-  color: inherit;
-}
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.page {
+  padding: 0 15%; }
+
+.page-container {
+  margin: 0 auto;
+  max-width: 980px; }
+
+.page-main {
+  padding: 50px 100px;
+  min-height: 70vh;
+  background-color: #fff;
+  border: 7px solid transparent;
+  border-image: url('data:image/svg+xml;utf8,  <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">  <g fill="#ca5">    <ellipse cx="5" cy="5" rx="5" ry="5"/>    <ellipse cx="25" cy="5" rx="5" ry="5"/>    <ellipse cx="45" cy="5" rx="5" ry="5"/>    <ellipse cx="5" cy="25" rx="5" ry="5"/>    <ellipse cx="45" cy="25" rx="5" ry="5"/>    <ellipse cx="5" cy="45" rx="5" ry="5"/>    <ellipse cx="25" cy="45" rx="5" ry="5"/>    <ellipse cx="45" cy="45" rx="5" ry="5"/>  </g>  </svg>') 15 round;
+  border-radius: 1px;
+  box-shadow: 0 0 0 7px #fff; }
+
+.page-title {
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: normal; }
+
+.node--type-article {
+  position: relative; }
+  .node--type-article > h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: normal; }
+  .node--type-article .node__submitted {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: .85rem;
+    font-style: italic;
+    color: #9aabbc; }
+  .node--type-article .field--type-created {
+    position: absolute;
+    z-index: 1;
+    bottom: -3px;
+    left: -140px;
+    padding: 10px 10px 15px 5px;
+    width: 100px;
+    text-align: center;
+    line-height: 1;
+    background-color: #6c8093;
+    color: #fff; }
+    .node--type-article .field--type-created::before, .node--type-article .field--type-created::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      background-color: #6c8093; }
+    .node--type-article .field--type-created::before {
+      top: 0;
+      bottom: 50%;
+      transform: skew(20deg);
+      transform-origin: 0 100%; }
+    .node--type-article .field--type-created::after {
+      top: 50%;
+      bottom: 0;
+      transform: skew(-20deg);
+      transform-origin: 0 0; }
+    .node--type-article .field--type-created .field__date {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold; }

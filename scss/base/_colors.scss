@@ -1,0 +1,18 @@
+$gray-hue: 210;
+
+$black: #000;
+$white: #fff;
+
+$gray-darker: hsl($gray-hue, 20, 33); // #456;
+$gray-dark: hsl($gray-hue, 15, 50); // #678;
+$gray: hsl($gray-hue, 20, 67); // #9ab;
+$gray-light: hsl($gray-hue, 30, 80); // #c3ced8;
+$gray-lighter: hsl($gray-hue, 50, 95); // #ecf2f8;
+
+$gold: #ca5;
+
+
+$bg-body: $gray-lighter; // #ecf2f8;
+$bg-page: $white; // #fff;
+$color-accent: $gold; // #ca5; // #4a8;
+$color-copy: $gray-darker; // #456;

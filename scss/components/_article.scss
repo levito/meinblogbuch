@@ -1,0 +1,67 @@
+@import "../base/index";
+
+.page-title {
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.node--type-article {
+  position: relative;
+
+  > h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .node__submitted {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: .85rem;
+    font-style: italic;
+    color: $gray;
+  }
+
+  .field--type-created {
+    position: absolute;
+    z-index: 1;
+    bottom: -3px;
+    left: -140px;
+    padding: 10px 10px 15px 5px;
+    width: 100px;
+    text-align: center;
+    line-height: 1;
+    background-color: $gray-dark;
+    color: $white;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      background-color: $gray-dark;
+    }
+    &::before {
+      top: 0;
+      bottom: 50%;
+      transform: skew(20deg);
+      transform-origin: 0 100%;
+    }
+    &::after {
+      top: 50%;
+      bottom: 0;
+      transform: skew(-20deg);
+      transform-origin: 0 0;
+    }
+
+    .field__date {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
