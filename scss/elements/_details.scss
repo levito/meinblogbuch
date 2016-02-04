@@ -1,0 +1,14 @@
+@import "../base/index";
+
+details {
+  border-color: $gray-light;
+}
+
+summary {
+  outline: none;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: $gray-lighter;
+  }
+}

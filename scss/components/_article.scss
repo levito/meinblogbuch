@@ -1,7 +1,7 @@
 @import "../base/index";
 
 .page-title {
-  margin-bottom: 0;
+  // margin-bottom: 0;
   line-height: 1;
   font-weight: normal;
 }
@@ -10,16 +10,17 @@
   position: relative;
 
   > h2 {
-    margin-bottom: 0;
-    font-size: 2rem;
+    // margin-bottom: 0;
+    font-size: 4rem;
     line-height: 1;
     font-weight: normal;
   }
 
   .node__submitted {
     position: relative;
-    margin-bottom: 40px;
-    font-size: .85rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.333;
     font-style: italic;
     color: $gray;
   }
@@ -27,10 +28,10 @@
   .field--type-created {
     position: absolute;
     z-index: 1;
-    bottom: -3px;
-    left: -140px;
-    padding: 10px 10px 15px 5px;
-    width: 100px;
+    bottom: -.5rem;
+    left: -13.5rem;
+    padding: 1.3rem 1rem 1.3rem .5rem;
+    width: 9.5rem;
     text-align: center;
     line-height: 1;
     background-color: $gray-dark;
@@ -60,7 +61,7 @@
 
     .field__date {
       display: block;
-      font-size: 1.5rem;
+      font-size: 3rem;
       font-weight: bold;
     }
   }

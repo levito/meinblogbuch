@@ -1,0 +1,9 @@
+@import "../base/index";
+
+.filter-wrapper {
+  border-color: $gray-light;
+}
+
+.filter-help a:after {
+  top: .5rem;
+}

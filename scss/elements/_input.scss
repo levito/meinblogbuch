@@ -1,0 +1,9 @@
+@import "../base/index";
+
+select {
+  height: 3.8rem;
+
+  &[multiple] {
+    height: auto;
+  }
+}

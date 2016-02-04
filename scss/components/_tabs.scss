@@ -1,0 +1,26 @@
+@import "../base/index";
+
+ul.tabs {
+  // margin: 15px 0;
+  border-bottom: 1px solid $gold-light;
+
+  > li {
+    position: relative;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+
+    &.is-active {
+      border-color: $gold-light $gold-light $white;
+    }
+
+    > a {
+      box-shadow: none;
+
+      &.is-active {
+        background-color: transparent;
+        color: $gray-darker;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @import "../base/index";
 
 .page {
-  padding: 0 15%;
+  padding: 2rem 5rem;
 }
 
 .page-container {
@@ -9,14 +9,47 @@
   max-width: 980px;
 }
 
-.page-main {
-  padding: 50px 100px;
-  min-height: 70vh;
+.page-container--header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .region-header {
+    width: 100%;
+  }
+
+  .block-system-branding-block {
+    padding: 6rem 0 3rem;
+    text-align: center;
+  }
+
+  .site-name {
+    font-size: 5rem;
+    line-height: 1.2;
+
+    > a {
+      box-shadow: none;
+      color: $gray;
+    }
+  }
+
+  .site-slogan {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: $gray-dark;
+  }
+}
+
+.page-container--main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 10rem 5rem;
+  // min-height: 70vh;
   background-color: $bg-page;
-  border: 7px solid transparent;
+  border: .8rem solid transparent;
   border-image: url('data:image/svg+xml;utf8,\
   <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">\
-  <g fill="#{$color-accent}">\
+  <g fill="#{$gold-light}">\
     <ellipse cx="5" cy="5" rx="5" ry="5"/>\
     <ellipse cx="25" cy="5" rx="5" ry="5"/>\
     <ellipse cx="45" cy="5" rx="5" ry="5"/>\
@@ -28,5 +61,5 @@
   </g>\
   </svg>') 15 round;
   border-radius: 1px;
-  box-shadow: 0 0 0 7px $bg-page;
+  box-shadow: 0 0 0 .8rem $bg-page;
 }

@@ -4,8 +4,12 @@ html {
   box-sizing: border-box;
   background: $bg-body;
   color: $color-copy;
-  font-family: Crimson Text, Georgia, sans-serif;
-  font-size: 20px;
+  font-family: Quattrocento, Georgia, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -25,14 +29,38 @@ a {
   }
 }
 
-button,
-input,
-textarea {
-  font: inherit;
-  color: inherit;
+h1, h2, h3, h4, h5, h6 {
+  margin: 6rem 0 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, li {
-  margin-top: 0;
-  margin-bottom: 30px;
+h1, h2 {
+  line-height: 1;
+}
+
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  margin: 3rem 0;
+}
+
+ul, ol, li,
+.item-list,
+.item-list li {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul, ol {
+  padding-left: 1.5em;
+}
+
+small {
+  font-size: 1.5rem;
+  line-height: 1.333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

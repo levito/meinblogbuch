@@ -44,24 +44,23 @@
  */
 #}
 <div class="page">
+  {{ page.highlighted }}
 
   <header role="banner" class="page-header">
-    <div class="page-container">
+    <div class="page-container page-container--header">
       {{ page.header }}
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
     </div>
   </header>
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {#{ page.breadcrumb }#}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
+  <div class="page-container">
+    {{ page.breadcrumb }}
+    {{ page.help }}
+  </div>
 
   <main role="main" class="page-main">
-    <div class="page-container">
+    <div class="page-container page-container--main">
       <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
       <div class="page-content">
@@ -84,7 +83,7 @@
 
   {% if page.footer %}
     <footer role="contentinfo" class="page-footer">
-      <div class="page-container">
+      <div class="page-container page-container--footer">
         {{ page.footer }}
       </div>
     </footer>

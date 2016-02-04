@@ -2,5 +2,7 @@ global-styling:
   version: VERSION
   css:
     theme:
-      https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic: { type: external }
+      # https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic: { type: external }
+      # https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700: { type: external }
+      https://fonts.googleapis.com/css?family=Quattrocento:400,700: { type: external }
       css/meinblogbuch.css: {}

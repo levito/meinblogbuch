@@ -1,0 +1,87 @@
+@import "../base/index";
+
+.form-composite > .fieldset-wrapper > .description,
+.form-item .description {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  font-style: italic;
+  color: $gray;
+}
+
+.form-item:not(.form-type-checkbox):not(.form-type-radio) {
+  > label {
+    display: block;
+  }
+
+  > input,
+  select,
+  .form-textarea-wrapper,
+  .form-managed-file {
+    width: 100%;
+  }
+
+  > input,
+  select,
+  textarea,
+  .image-widget-data {
+    padding: .8rem 1.2rem;
+    border: 1px solid $gray-light;
+    border-radius: 2px;
+    background: $white;
+    transition: all .2s;
+    outline: 0;
+
+    &:focus {
+      border-color: $gray;
+    }
+  }
+
+  .form-file {
+    display: block;
+    width: 100%;
+    opacity: 0;
+  }
+
+  > .description {
+    width: 100%;
+    margin-top: .5rem;
+  }
+}
+
+
+.form-type-checkbox,
+.form-type-radio {
+  position: relative;
+
+  > label,
+  .description {
+    margin-left: 2.5rem;
+  }
+
+  > input {
+    position: absolute;
+    margin-top: .8rem;
+  }
+}
+
+
+#search-block-form {
+  display: flex;
+
+  .form-type-search {
+    margin: 0;
+
+    input {
+      width: 20rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

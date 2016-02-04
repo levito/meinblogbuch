@@ -1,0 +1,40 @@
+@import "../base/index";
+
+@mixin button($background, $color) {
+  background: $background;
+  transition: all .2s;
+  // @if $color {
+  color: $color;
+  outline: 1px solid transparent;
+  outline-offset: -2px;
+  // } @else if lightness($background) > 50% {
+  //   color: $gray-darker;
+  // } @else {
+  //   color: $white;
+  // }
+
+  &:hover {
+    background: lighten($background, 3%);
+  }
+
+  &:active {
+    transition: none;
+    background: darken($background, 3%);
+  }
+
+  &:focus {
+    outline-color: fade-out($color, .3);
+  }
+}
+
+
+.button {
+  @include button($gray-light, $gray-dark);
+  padding: .9rem 2rem;
+  border: 0;
+  border-radius: 2px;
+}
+
+.button--primary {
+  @include button($gray-dark, $white);
+}

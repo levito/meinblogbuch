@@ -1,0 +1,19 @@
+ul.menu {
+  margin: 0;
+
+  a.is-active {
+    color: $gray-darker;
+  }
+}
+
+.page-header {
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.17em;
+
+    .menu-item {
+      margin-right: 30px;
+    }
+  }
+}
