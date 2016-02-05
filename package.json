@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/meinblogbuch.scss css/meinblogbuch.css",
-    "watch-css": "nodemon -e scss -x 'npm run build-css'"
+    "sass": "node-sass --source-map-embed --include-path scss scss/meinblogbuch.scss css/meinblogbuch.css",
+    "autoprefixer": "autoprefixer-cli --no-inline-map css/meinblogbuch.css",
+    "cleancss": "cleancss -o css/meinblogbuch.css css/meinblogbuch.css",
+    "watch": "nodemon -e scss -x 'npm run sass'",
+    "build": "npm run sass && npm run autoprefixer && npm run cleancss",
+    "start": "npm run watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "clean-css": "^3.4.9",
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1"
   },

@@ -48,17 +48,18 @@
   background-color: $bg-page;
   border: .8rem solid transparent;
   border-image: url('data:image/svg+xml;utf8,\
-  <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">\
-  <g fill="#{$gold-light}">\
-    <ellipse cx="5" cy="5" rx="5" ry="5"/>\
-    <ellipse cx="25" cy="5" rx="5" ry="5"/>\
-    <ellipse cx="45" cy="5" rx="5" ry="5"/>\
-    <ellipse cx="5" cy="25" rx="5" ry="5"/>\
-    <ellipse cx="45" cy="25" rx="5" ry="5"/>\
-    <ellipse cx="5" cy="45" rx="5" ry="5"/>\
-    <ellipse cx="25" cy="45" rx="5" ry="5"/>\
-    <ellipse cx="45" cy="45" rx="5" ry="5"/>\
-  </g>\
+  <svg xmlns="http://www.w3.org/2000/svg"\
+    viewBox="0 0 50 50" width="50" height="50">\
+    <g fill="#{$gold-light}">\
+      <ellipse cx="5" cy="5" rx="5" ry="5"/>\
+      <ellipse cx="25" cy="5" rx="5" ry="5"/>\
+      <ellipse cx="45" cy="5" rx="5" ry="5"/>\
+      <ellipse cx="5" cy="25" rx="5" ry="5"/>\
+      <ellipse cx="45" cy="25" rx="5" ry="5"/>\
+      <ellipse cx="5" cy="45" rx="5" ry="5"/>\
+      <ellipse cx="25" cy="45" rx="5" ry="5"/>\
+      <ellipse cx="45" cy="45" rx="5" ry="5"/>\
+    </g>\
   </svg>') 15 round;
   border-radius: 1px;
   box-shadow: 0 0 0 .8rem $bg-page;
