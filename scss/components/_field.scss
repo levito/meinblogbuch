@@ -1,0 +1,14 @@
+.node .field--type-image {
+  float: left;
+  margin: 0.7rem 3rem 1rem 0;
+
+  .page-node-type-article & {
+    float: none;
+    margin: 0;
+
+    .image-style-large {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,20 +1,11 @@
 @import "../base/index";
 
 .page-title {
-  // margin-bottom: 0;
-  line-height: 1;
   font-weight: normal;
 }
 
 .node--type-article {
   position: relative;
-
-  > h2 {
-    // margin-bottom: 0;
-    font-size: 4rem;
-    line-height: 1;
-    font-weight: normal;
-  }
 
   .node__submitted {
     position: relative;
@@ -28,12 +19,12 @@
   .field--type-created {
     position: absolute;
     z-index: 1;
-    bottom: -.5rem;
+    bottom: -1.3rem;
     left: -13.5rem;
     padding: 1.3rem 1rem 1.3rem .5rem;
     width: 9.5rem;
     text-align: center;
-    line-height: 1;
+    line-height: 1.333;
     background-color: $gray-dark;
     color: $white;
 
@@ -62,6 +53,7 @@
     .field__date {
       display: block;
       font-size: 3rem;
+      line-height: 1.2;
       font-weight: bold;
     }
   }

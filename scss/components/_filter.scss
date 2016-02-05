@@ -4,6 +4,17 @@
   border-color: $gray-light;
 }
 
-.filter-help a:after {
-  top: .5rem;
+.filter-help,
+.tips {
+  font-size: 1.5rem;
+  line-height: 1.333;
+}
+
+.tips {
+  padding-left: 1.5rem;
+
+  &::before {
+    content: " ";
+    display: table;
+  }
 }
