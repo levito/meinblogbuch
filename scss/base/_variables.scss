@@ -1,0 +1,10 @@
+$screen-sm: 480px;
+$screen-md: 720px;
+$screen-lg: 1024px;
+
+$mq-max-sm: '(max-width: #{$screen-sm})';
+$mq-min-sm: '(min-width: #{$screen-sm + 1})';
+$mq-max-md: '(max-width: #{$screen-md})';
+$mq-min-md: '(min-width: #{$screen-md + 1})';
+$mq-max-lg: '(max-width: #{$screen-lg})';
+$mq-min-lg: '(min-width: #{$screen-lg + 1})';

@@ -16,47 +16,49 @@
     line-height: 1.333;
   }
 
-  .field--type-created {
-    position: absolute;
-    bottom: -1.3rem;
-    left: -13.5rem;
-    width: 9.5rem;
-    padding: 1.3rem 1rem 1.3rem .5rem;
-    background-color: $gray-dark;
-    color: $white;
-    line-height: 1.333;
-    text-align: center;
-    z-index: 1;
-
-    &::before,
-    &::after {
+  @media screen and #{$mq-min-md} {
+    .field--type-created {
       position: absolute;
-      right: 0;
-      left: 0;
+      bottom: -1.3rem;
+      left: -13rem;
+      width: 9.5rem;
+      padding: 1.3rem 1rem 1.3rem .5rem;
       background-color: $gray-dark;
-      content: '';
-      z-index: -1;
-    }
+      color: $white;
+      line-height: 1.333;
+      text-align: center;
+      z-index: 1;
 
-    &::before {
-      top: 0;
-      bottom: 50%;
-      transform: skew(20deg);
-      transform-origin: 0 100%;
-    }
+      &::before,
+      &::after {
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: $gray-dark;
+        content: '';
+        z-index: -1;
+      }
 
-    &::after {
-      top: 50%;
-      bottom: 0;
-      transform: skew(-20deg);
-      transform-origin: 0 0;
-    }
+      &::before {
+        top: 0;
+        bottom: 50%;
+        transform: skew(20deg);
+        transform-origin: 0 100%;
+      }
 
-    .field__date {
-      display: block;
-      font-size: 3rem;
-      font-weight: bold;
-      line-height: 1.2;
+      &::after {
+        top: 50%;
+        bottom: 0;
+        transform: skew(-20deg);
+        transform-origin: 0 0;
+      }
+
+      .field__date {
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.2;
+      }
     }
   }
 }

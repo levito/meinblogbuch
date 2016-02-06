@@ -21,7 +21,6 @@
   }
 }
 
-
 .button {
   @include button($gray-light, $gray-dark);
   padding: .9rem 2rem;
@@ -31,4 +30,5 @@
 
 .button--primary {
   @include button($gray-dark, $white);
+  font-weight: bold;
 }
