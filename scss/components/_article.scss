@@ -1,4 +1,4 @@
-@import "../base/index";
+@import '../base/index';
 
 .page-title {
   font-weight: normal;
@@ -10,39 +10,41 @@
   .node__submitted {
     position: relative;
     margin-bottom: 3rem;
-    font-size: 1.5rem;
-    line-height: 1.333;
-    font-style: italic;
     color: $gray;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.333;
   }
 
   .field--type-created {
     position: absolute;
-    z-index: 1;
     bottom: -1.3rem;
     left: -13.5rem;
-    padding: 1.3rem 1rem 1.3rem .5rem;
     width: 9.5rem;
-    text-align: center;
-    line-height: 1.333;
+    padding: 1.3rem 1rem 1.3rem .5rem;
     background-color: $gray-dark;
     color: $white;
+    line-height: 1.333;
+    text-align: center;
+    z-index: 1;
 
     &::before,
     &::after {
-      content: "";
       position: absolute;
-      z-index: -1;
-      left: 0;
       right: 0;
+      left: 0;
       background-color: $gray-dark;
+      content: '';
+      z-index: -1;
     }
+
     &::before {
       top: 0;
       bottom: 50%;
       transform: skew(20deg);
       transform-origin: 0 100%;
     }
+
     &::after {
       top: 50%;
       bottom: 0;
@@ -53,8 +55,8 @@
     .field__date {
       display: block;
       font-size: 3rem;
-      line-height: 1.2;
       font-weight: bold;
+      line-height: 1.2;
     }
   }
 }

@@ -1,23 +1,29 @@
 {
   "name": "meinblogbuch",
   "version": "1.0.0",
-  "description": "",
+  "description": "Drupal Theme for Laura",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --source-map-embed --include-path scss scss/meinblogbuch.scss css/meinblogbuch.css",
+    "sass-lint": "sass-lint -vq scss/**/*.scss",
     "autoprefixer": "autoprefixer-cli --no-inline-map css/meinblogbuch.css",
     "cleancss": "cleancss -o css/meinblogbuch.css css/meinblogbuch.css",
-    "watch": "nodemon -e scss -x 'npm run sass'",
+    "watch": "nodemon -e scss -x 'npm run sass-lint & npm run sass'",
     "build": "npm run sass && npm run autoprefixer && npm run cleancss",
     "start": "npm run watch"
   },
-  "author": "",
+  "author": {
+    "name": "Veit Lehmann",
+    "email": "levito82@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "clean-css": "^3.4.9",
     "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "sass-lint": "^1.5.0"
   },
   "dependencies": {
     "sticky-position": "^1.0.0"

@@ -1,17 +1,11 @@
-@import "../base/index";
+@import '../base/index';
 
 @mixin button($background, $color) {
-  background: $background;
-  transition: all .2s;
-  // @if $color {
-  color: $color;
+  transition: background-color .2s, outline-color .2s;
   outline: 1px solid transparent;
   outline-offset: -2px;
-  // } @else if lightness($background) > 50% {
-  //   color: $gray-darker;
-  // } @else {
-  //   color: $white;
-  // }
+  background: $background;
+  color: $color;
 
   &:hover {
     background: lighten($background, 3%);

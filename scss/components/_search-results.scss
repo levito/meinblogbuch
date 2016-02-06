@@ -1,11 +1,11 @@
-@import "../base/index";
+@import '../base/index';
 
 .search-form {
   margin: 1em 0;
 
   .form-search.form-search.form-search {
-    float: left;
     width: 60%;
+    float: left;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -43,7 +43,7 @@
 
 .search-result__info {
   margin: 0;
+  color: $gray;
   font-size: 1.5rem;
   line-height: 1.333;
-  color: $gray;
 }

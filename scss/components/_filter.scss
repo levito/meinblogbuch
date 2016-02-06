@@ -1,4 +1,4 @@
-@import "../base/index";
+@import '../base/index';
 
 .filter-wrapper {
   border-color: $gray-light;
@@ -14,7 +14,7 @@
   padding-left: 1.5rem;
 
   &::before {
-    content: " ";
     display: table;
+    content: ' ';
   }
 }

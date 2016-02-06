@@ -1,12 +1,12 @@
-@import "../base/index";
+@import '../base/index';
 
 .page {
   padding: 2rem 5rem;
 }
 
 .page-container {
-  margin: 0 auto;
   max-width: 980px;
+  margin: 0 auto;
 }
 
 .page-container--header {
@@ -28,29 +28,32 @@
     line-height: 1.2;
 
     > a {
-      box-shadow: none;
       color: $gray;
+      box-shadow: none;
     }
   }
 
   .site-slogan {
+    color: $gray-dark;
     font-size: 1.7rem;
     font-style: italic;
-    color: $gray-dark;
   }
 }
 
 .page-container--main {
+  $svg-color: uri-encode(unquote('#{$gold-light}'));
+
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 0 9.2rem 5.2rem;
-  // min-height: 70vh;
-  background-color: $bg-page;
   border: .8rem solid transparent;
+  border-radius: 1px;
+  background-color: $bg-page;
+  box-shadow: 0 0 0 .8rem $bg-page;
   border-image: url('data:image/svg+xml;utf8,\
   <svg xmlns="http://www.w3.org/2000/svg"\
     viewBox="0 0 50 50" width="50" height="50">\
-    <g fill="#{$gold-light}">\
+    <g fill="#{$svg-color}">\
       <ellipse cx="5" cy="5" rx="5" ry="5"/>\
       <ellipse cx="25" cy="5" rx="5" ry="5"/>\
       <ellipse cx="45" cy="5" rx="5" ry="5"/>\
@@ -61,6 +64,4 @@
       <ellipse cx="45" cy="45" rx="5" ry="5"/>\
     </g>\
   </svg>') 15 round;
-  border-radius: 1px;
-  box-shadow: 0 0 0 .8rem $bg-page;
 }

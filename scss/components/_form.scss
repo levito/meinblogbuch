@@ -1,11 +1,11 @@
-@import "../base/index";
+@import '../base/index';
 
 .form-composite > .fieldset-wrapper > .description,
 .form-item .description {
-  font-size: 1.5rem;
-  line-height: 1.333;
-  font-style: italic;
   color: $gray;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.333;
 }
 
 .form-item:not(.form-type-checkbox):not(.form-type-radio) {
@@ -25,11 +25,11 @@
   textarea,
   .image-widget-data {
     padding: .8rem 1.2rem;
+    transition: border-color .2s;
     border: 1px solid $gray-light;
     border-radius: 2px;
-    background: $white;
-    transition: all .2s;
     outline: 0;
+    background: $white;
 
     &:focus {
       border-color: $gray;
@@ -64,7 +64,6 @@
   }
 }
 
-
 #search-block-form {
   display: flex;
 
@@ -79,8 +78,8 @@
   }
 
   .button {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }

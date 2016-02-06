@@ -11,7 +11,7 @@ $gray-light: hsl($gray-hue, 25, 85); // #c3ced8;
 $gray-lighter: hsl($gray-hue, 30, 95); // #ecf2f8;
 
 $gold: hsl($gold-hue, 55, 55); // #ca5;
-$gold-light: unquote("hsl(#{$gold-hue}, 70%, 70%)");
+$gold-light: hsl($gold-hue, 70, 70);
 
 
 $bg-body: $gray-lighter; // #ecf2f8;
