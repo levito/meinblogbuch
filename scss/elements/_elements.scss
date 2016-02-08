@@ -1,8 +1,8 @@
 @import '../base/index';
 
 html {
-  background: $bg-body;
-  color: $color-copy;
+  background: $gray-lighter;
+  color: $gray-darker;
   font-family: Quattrocento, Georgia, sans-serif;
   font-size: 62.5%;
   box-sizing: border-box;
@@ -20,11 +20,12 @@ body {
 }
 
 a {
-  transition: box-shadow .2s;
-  color: $color-accent;
+  transition: box-shadow .2s, color .2s;
+  color: $gold;
   text-decoration: none;
 
   &:hover {
+    color: $gold-dark;
     box-shadow: 0 1px 0 0 currentColor;
   }
 }
@@ -79,7 +80,7 @@ ol {
 }
 
 small {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.333;
 }
 

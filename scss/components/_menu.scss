@@ -12,10 +12,13 @@ ul.menu {
   .menu {
     display: flex;
     flex-wrap: nowrap;
-    font-size: 1.17em;
+    font-family: Amatic SC;
+    font-size: 2em;
+    line-height: 1;
 
     .menu-item {
       margin-right: 30px;
+      padding-top: 0;
     }
   }
 }

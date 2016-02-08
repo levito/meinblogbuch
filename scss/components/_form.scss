@@ -1,5 +1,11 @@
 @import '../base/index';
 
+.label {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
 .form-composite > .fieldset-wrapper > .description,
 .form-item .description {
   color: $gray;
@@ -18,6 +24,10 @@
   .form-textarea-wrapper,
   .form-managed-file {
     width: 100%;
+
+    .container-inline & {
+      width: auto;
+    }
   }
 
   > input,

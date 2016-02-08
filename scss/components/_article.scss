@@ -6,6 +6,7 @@
 
 .node--type-article {
   position: relative;
+  clear: both;
 
   .node__submitted {
     position: relative;
@@ -19,10 +20,10 @@
   @media screen and #{$mq-min-md} {
     .field--type-created {
       position: absolute;
-      bottom: -1.3rem;
+      bottom: -1.4rem;
       left: -13rem;
       width: 9.5rem;
-      padding: 1.3rem 1rem 1.3rem .5rem;
+      padding: 1.4rem 1rem 1.4rem .5rem;
       background-color: $gray-dark;
       color: $white;
       line-height: 1.333;
