@@ -5,14 +5,14 @@
   html,
   body {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
   }
 }
 
 html {
   background: $gray-lighter;
   color: $gray-darker;
-  font-family: Quattrocento, Georgia, sans-serif;
+  font-family: $font-copy;
   font-size: 62.5%;
   box-sizing: border-box;
 }
@@ -27,22 +27,32 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    padding-top: 50%;
-    background: $white;
+    padding-top: 100%;
+    background: url('../images/bg-body.png') 100% 0 no-repeat;
+    background-size: 45%;
     content: '';
     z-index: -1;
+    opacity: .67;
   }
 
   // parallax for larger screens
   @media screen and #{$mq-min-md} {
-    overflow-y: auto;
-    perspective: 1px;
-    perspective-origin: 100% 0;
-    -webkit-overflow-scrolling: touch;
 
-    &::before {
-      transform: translateZ(-2px) scale(3);
-      transform-origin: 100% 0;
+    &:not(.toolbar-fixed) {
+      overflow-y: auto;
+      perspective: 1px;
+      perspective-origin: 100% 0;
+      -webkit-overflow-scrolling: touch;
+
+      &::before {
+        transform: translateZ(-1px) scale(2);
+        transform-origin: 100% 0;
+      }
+    }
+
+    &.toolbar-fixed {
+      height: auto;
+      overflow: visible;
     }
   }
 }
