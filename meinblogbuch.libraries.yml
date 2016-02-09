@@ -2,6 +2,5 @@ global-styling:
   version: VERSION
   css:
     theme:
-      https://fonts.googleapis.com/css?family=Quattrocento:400,700: { type: external }
+      # https://fonts.googleapis.com/css?family=Quattrocento:400,700|Amatic+SC: { type: external }
       css/meinblogbuch.css: {}
-      https://fonts.googleapis.com/css?family=Amatic+SC: { type: external }

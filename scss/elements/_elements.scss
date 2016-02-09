@@ -1,5 +1,14 @@
 @import '../base/index';
 
+// parallax preparation
+@media screen and #{$mq-min-md} {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 html {
   background: $gray-lighter;
   color: $gray-darker;
@@ -11,6 +20,31 @@ html {
 body {
   font-size: 2rem;
   line-height: 1.5;
+
+  // static image and native scrolling for small screens
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 50%;
+    background: $white;
+    content: '';
+    z-index: -1;
+  }
+
+  // parallax for larger screens
+  @media screen and #{$mq-min-md} {
+    overflow-y: auto;
+    perspective: 1px;
+    perspective-origin: 100% 0;
+    -webkit-overflow-scrolling: touch;
+
+    &::before {
+      transform: translateZ(-2px) scale(3);
+      transform-origin: 100% 0;
+    }
+  }
 }
 
 *,

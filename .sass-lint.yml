@@ -28,12 +28,12 @@ rules:
   no-important: 0
   no-invalid-hex: 1
   no-mergeable-selectors: 1
-  no-misspelled-properties: 1
+  no-misspelled-properties: 0
   no-qualifying-elements: 0
   no-trailing-zero: 1
   no-transition-all: 1
   no-url-protocols: 1
-  no-vendor-prefixes: 1
+  no-vendor-prefixes: 0
   no-warn: 1
   property-units: 0
 
@@ -63,8 +63,7 @@ rules:
   nesting-depth: 0
   property-sort-order:
     - 1
-    - ignore-custom-properties: false
-      order: smacss
+    - order: smacss
   quotes: 1
   shorthand-values: 1
   url-quotes: 1
