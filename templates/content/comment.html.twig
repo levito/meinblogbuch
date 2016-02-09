@@ -84,12 +84,17 @@
   #}
   <mark class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></mark>
 
+  <div{{ content_attributes.addClass('content') }}>
+    {{ content|without('links') }}
+  </div>
+
   <footer class="comment__meta">
     {{ user_picture }}
-    <p class="comment__submitted">
-      {{ permalink }}
+    <div class="comment__submitted">
       {{ submitted }}
-    </p>
+    </div>
+    <span class="comment__permalink">{{ permalink }}</span>
+    {{ content.links }}
 
     {#
       Indicate the semantic relationship between parent and child comments for
@@ -100,8 +105,4 @@
       <p class="parent visually-hidden">{{ parent }}</p>
     {% endif %}
   </footer>
-
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
-  </div>
 </article>
