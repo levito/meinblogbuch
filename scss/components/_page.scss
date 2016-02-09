@@ -18,47 +18,53 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media screen and #{$mq-min-md} {
+    position: relative; // keep above branding-block
+  }
+
   .region-header {
     width: 100%;
   }
 
-  @media screen and #{$mq-max-md} {
-    .region-primary-menu,
-    .region-secondary-menu {
+  .region-primary-menu,
+  .region-secondary-menu {
+    @media screen and #{$mq-max-md} {
       width: 100%;
     }
   }
+}
 
-  .block-system-branding-block {
-    padding: 2rem 0 1rem;
-    text-align: center;
+.block-system-branding-block {
+  padding: 4rem 0;
+  text-align: center;
 
-    @media screen and #{$mq-min-md} {
-      padding: 6rem 0 3rem;
-    }
+  @media screen and #{$mq-min-md} {
+    padding: 14rem 0 10rem;
+    transform: translateZ(-.67px) scale(1.67);
+    transform-origin: 100% 0;
   }
+}
 
-  .site-name {
-    font-family: $font-brand;
-    font-size: 8rem;
-    line-height: 1.1;
+.site-name {
+  font-family: $font-brand;
+  font-size: 8rem;
+  line-height: 1.1;
 
-    > a {
-      color: $gray;
-      box-shadow: none;
-    }
+  > a {
+    color: $gray;
+    box-shadow: none;
   }
+}
 
-  .site-slogan {
-    color: $gray-dark;
-    font-size: 1.3rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
+.site-slogan {
+  color: $gray-dark;
+  font-size: 1.3rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 
-    &::before,
-    &::after {
-      content: ' ⁓ ';
-    }
+  &::before,
+  &::after {
+    content: ' ⁓ ';
   }
 }
 

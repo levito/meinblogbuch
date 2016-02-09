@@ -27,12 +27,12 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    padding-top: 100%;
+    padding-top: 50%;
     background: url('../images/bg-body.png') 100% 0 no-repeat;
     background-size: 45%;
     content: '';
+    opacity: .6;
     z-index: -1;
-    opacity: .67;
   }
 
   // parallax for larger screens
@@ -45,7 +45,7 @@ body {
       -webkit-overflow-scrolling: touch;
 
       &::before {
-        transform: translateZ(-1px) scale(2);
+        transform: translateZ(-2px) scale(3);
         transform-origin: 100% 0;
       }
     }
@@ -55,6 +55,10 @@ body {
       overflow: visible;
     }
   }
+}
+
+* {
+  outline: none;
 }
 
 *,
