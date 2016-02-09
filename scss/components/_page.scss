@@ -40,8 +40,11 @@
 
   @media screen and #{$mq-min-md} {
     padding: 14rem 0 10rem;
-    transform: translateZ(-.67px) scale(1.67);
-    transform-origin: 100% 0;
+
+    body:not(.toolbar-fixed) & {
+      transform: translateZ(-.67px) scale(1.67);
+      transform-origin: 100% 0;
+    }
   }
 }
 
