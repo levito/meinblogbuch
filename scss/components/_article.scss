@@ -13,6 +13,18 @@
     line-height: 1.333;
   }
 
+  @media screen and #{$mq-max-md} {
+    .field__date {
+      &::before {
+        content: 'am ';
+      }
+
+      &::after {
+        content: '.';
+      }
+    }
+  }
+
   @media screen and #{$mq-min-md} {
     .field--type-created {
       position: absolute;
