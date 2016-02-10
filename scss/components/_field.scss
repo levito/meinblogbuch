@@ -23,12 +23,12 @@
 
 .field--name-field-tags,
 .node__links {
-  margin-bottom: 4rem;
   font-size: 1.7rem;
   line-height: 1.333;
 }
 
 .field--name-field-tags {
+  margin-bottom: .7rem;
   float: right;
   color: $gray;
 
@@ -60,6 +60,7 @@
 }
 
 .node__links {
+  margin-bottom: 3rem;
   float: left;
 
   .node-readmore {

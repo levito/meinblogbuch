@@ -1,33 +1,10 @@
 .toolbar {
-  $toolbar-border-color: #ddd;
-
   li {
     margin: 0;
   }
 
   a {
-    line-height: 1.333;
     box-shadow: none;
-  }
-
-  .toolbar-tray-horizontal {
-    li {
-      border-right: 1px solid $toolbar-border-color;
-    }
-  }
-
-  .toolbar-tray-vertical {
-    li {
-      border-bottom: 1px solid $toolbar-border-color;
-    }
-
-    .toolbar-menu a {
-      padding: 1em;
-    }
-
-    .edit-shortcuts {
-      text-align: left;
-    }
   }
 }
 

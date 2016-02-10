@@ -21,15 +21,24 @@
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.333;
-  text-align: right;
+  @media screen and #{$mq-min-md} {
+    text-align: right;
+  }
 }
 
 .comment__submitted {
-  float: left;
+  @media screen and #{$mq-max-md} {
+    margin-bottom: .7rem;
+    text-align: left;
+  }
+
+  @media screen and #{$mq-min-md} {
+    float: left;
+  }
 }
 
 .comment__permalink {
-  padding: 0 .5em;
+  padding-right: 1em;
 }
 
 .filter-wrapper {
