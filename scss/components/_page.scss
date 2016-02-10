@@ -71,6 +71,10 @@
   }
 }
 
+.page-title {
+  font-weight: normal;
+}
+
 .page-container--main {
   $svg-color: uri-encode(unquote('#{$gold-light}'));
 
