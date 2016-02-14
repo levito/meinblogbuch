@@ -38,7 +38,7 @@ body {
   // parallax for larger screens
   @media screen and #{$mq-min-md} {
 
-    &:not(.toolbar-fixed) {
+    &:not(.toolbar-fixed):not(.imce-page) {
       overflow-y: auto;
       perspective: 1px;
       perspective-origin: 100% 0;
