@@ -26,6 +26,9 @@
 * Breadcrumbs => raus
 * Reiter => unter Seitentitel
 
+### /admin/structure/views/view/frontpage
+* Seitennavigation: Erste/Vorherige/Nächste/Letzte: nur Pfeile
+
 ### Design => Einstellungen
 * Logo des Themes verwenden: nein
 

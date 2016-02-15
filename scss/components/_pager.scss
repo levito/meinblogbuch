@@ -1,0 +1,24 @@
+@import '../base/index';
+
+.pager__items {
+  padding-left: 0;
+}
+
+.pager__item {
+  padding: .5rem;
+
+  a {
+    display: inline-block;
+    min-width: 1.8em;
+    transition: border-color .2s;
+    border: 1px solid $gold-light;
+    border-radius: 99rem;
+    line-height: 1.8;
+    box-shadow: none;
+    box-sizing: content-box;
+
+    &:hover {
+      border-color: $gold;
+    }
+  }
+}
