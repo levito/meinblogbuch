@@ -5,7 +5,7 @@
   html,
   body {
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
   }
 }
 
@@ -45,7 +45,9 @@ body {
       -webkit-overflow-scrolling: touch;
 
       &::before {
-        transform: translateZ(-2px) scale(3);
+        $scale: 4;
+
+        transform: translateZ(-($scale - 1px)) scale($scale);
         transform-origin: 100% 0;
       }
     }

@@ -1,10 +1,14 @@
 @import '../base/index';
 
+$branding-padding-top: 16rem;
+$branding-padding-bottom: 10rem;
+$branding-padding: $branding-padding-top 0 $branding-padding-bottom;
+
 .page {
-  padding: 1rem 2rem;
+  padding: 0 2rem 1rem;
 
   @media screen and #{$mq-min-md} {
-    padding: 2rem 5rem;
+    padding: 0 5rem 2rem;
   }
 }
 
@@ -35,16 +39,11 @@
 }
 
 .block-system-branding-block {
-  padding: 4rem 0;
+  padding: 5rem 0 4rem;
   text-align: center;
 
   @media screen and #{$mq-min-md} {
-    padding: 14rem 0 10rem;
-
-    body:not(.toolbar-fixed) & {
-      transform: translateZ(-.67px) scale(1.67);
-      transform-origin: 100% 0;
-    }
+    padding: $branding-padding;
   }
 }
 
@@ -71,8 +70,55 @@
   }
 }
 
+@media screen and #{$mq-min-md} {
+  body:not(.toolbar-fixed):not(.imce-page) {
+    .block-system-branding-block {
+      &::before,
+      &::after {
+        display: block;
+        content: '\00a0';
+      }
+
+      &::before {
+        font-size: 8rem;
+        line-height: 1.1;
+      }
+
+      &::after {
+        font-size: 1.3rem;
+        letter-spacing: .1em;
+      }
+
+      .system-branding {
+        $scale: 2;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: $branding-padding;
+        transform: translateZ(-($scale - 1px)) scale($scale);
+        transform-origin: 100% 0;
+      }
+    }
+  }
+
+  // .site-name,
+  // .site-slogan {
+  //   opacity: 0;
+  // }
+  // .system-branding {
+  //   background: rgba(0,0,0,.1);
+  // }
+}
+
 .page-title {
   font-weight: normal;
+}
+
+.page-main {
+  position: relative;
+  z-index: 1;
 }
 
 .page-container--main {
