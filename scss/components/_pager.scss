@@ -1,13 +1,27 @@
 @import '../base/index';
 
 .pager__items {
-  padding-left: 0;
+  position: relative;
+  padding: 0 10rem;
+  font-size: 0;
 }
 
 .pager__item {
-  padding: .5rem;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: .7rem;
+  font-size: 2rem;
+  z-index: 1;
 
-  a {
+  &.is-active {
+    > a {
+      border-color: $gold-dark;
+      color: $gold-dark;
+    }
+  }
+
+  > a {
     display: inline-block;
     min-width: 1.8em;
     transition: border-color .2s;
@@ -21,4 +35,28 @@
       border-color: $gold;
     }
   }
+}
+
+.pager__item--first,
+.pager__item--previous,
+.pager__item--next,
+.pager__item--last {
+  position: absolute;
+  top: 0;
+}
+
+.pager__item--first {
+  left: 0;
+}
+
+.pager__item--previous {
+  left: 2.6em;
+}
+
+.pager__item--next {
+  right: 2.6em;
+}
+
+.pager__item--last {
+  right: 0;
 }
