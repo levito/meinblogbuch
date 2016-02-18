@@ -11,3 +11,7 @@ $mq-min-lg: '(min-width: #{$screen-lg + 1})';
 
 $font-brand: Amatic SC, Arial Narrow, sans-serif;
 $font-copy: Quattrocento, Georgia, serif;
+
+$branding-padding-top: 16rem;
+$branding-padding-bottom: 10rem;
+$branding-padding: $branding-padding-top 0 $branding-padding-bottom;

@@ -1,0 +1,95 @@
+@import '../base/index';
+
+// parallax preparation
+@media screen and #{$mq-min-md} {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+body {
+  // static image and native scrolling for small screens
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 50%;
+    background: url('../images/bg-body.png') 100% 0 no-repeat;
+    background-size: 45%;
+    content: '';
+    opacity: .6;
+    z-index: -1;
+  }
+}
+
+// parallax for larger screens
+@media screen and #{$mq-min-md} {
+  .page-container--header {
+    position: relative; // keep above branding-block
+  }
+
+  body.toolbar-fixed {
+    height: auto;
+    overflow: visible;
+  }
+
+  body:not(.toolbar-fixed):not(.imce-page) {
+    overflow-y: auto;
+    perspective: 1px;
+    perspective-origin: 100% 0;
+    -webkit-overflow-scrolling: touch;
+
+    &::before {
+      $scale: 4;
+
+      transform: translateZ(-($scale - 1px)) scale($scale);
+      transform-origin: 100% 0;
+    }
+
+    .block-system-branding-block {
+      &::before,
+      &::after {
+        display: block;
+        content: '\00a0';
+      }
+
+      &::before {
+        font-size: 8rem;
+        line-height: 1.1;
+      }
+
+      &::after {
+        font-size: 1.3rem;
+        letter-spacing: .1em;
+      }
+
+      .system-branding {
+        $scale: 2;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: $branding-padding;
+        transform: translateZ(-($scale - 1px)) scale($scale);
+        transform-origin: 100% 0;
+      }
+    }
+  }
+
+  // .site-name,
+  // .site-slogan {
+  //   opacity: 0;
+  // }
+  // .system-branding {
+  //   background: rgba(0,0,0,.1);
+  // }
+}
+
+.page-main {
+  position: relative;
+  z-index: 1;
+}
