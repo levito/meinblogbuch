@@ -56,3 +56,19 @@
 
 #### Inhaltserstellung => Text formats and editors => Basic + Full HTML (?)
 * Bild: Maximum dimensions: 980 x 980
+
+
+## Kommentar-Einstellungen
+
+### /admin/people/permissions
+* Kommentare erstellen/bearbeiten/Freigabe überspringen für Gast und angemeldete Benutzer
+
+### /admin/structure/types/manage/article/fields/node.article.comment
+* Gäste müssen ihre Kontakt-Informationen angeben
+
+### /admin/structure/comment/manage/comment/form-display
+* Sprache und Betreff raus
+* Kommentar hoch
+
+### /admin/appearance/settings
+* Überprüfungsstatus eines Benutzers in Kommentaren => raus
