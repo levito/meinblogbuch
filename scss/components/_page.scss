@@ -74,7 +74,8 @@
   padding: 0 1rem;
   border: 1.5rem solid transparent;
   border-radius: .7rem;
-  background-color: $bg-page;
+  background-color: $white;
+  box-shadow: 0 1px 4px $darken-01;
   border-image: url('data:image/svg+xml;utf8,\
   <svg xmlns="http://www.w3.org/2000/svg"\
     viewBox="0 0 70 70" width="70" height="70">\
