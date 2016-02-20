@@ -1,0 +1,25 @@
+@import '../base/index';
+
+body.cke_editable {
+  max-width: 1020px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1px 2rem;
+  overflow: auto;
+}
+
+img {
+  &.align-left,
+  &.align-right {
+    max-width: 50%;
+    margin: .7rem 0 1rem;
+  }
+
+  &.align-left {
+    margin-right: 3rem;
+  }
+
+  &.align-right {
+    margin-left: 3rem;
+  }
+}

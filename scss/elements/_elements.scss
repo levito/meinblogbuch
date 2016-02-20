@@ -2,13 +2,13 @@
 
 html {
   background: $gray-lighter;
-  color: $gray-darker;
-  font-family: $font-copy;
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
 body {
+  color: $gray-darker;
+  font-family: $font-copy;
   font-size: 2rem;
   line-height: 1.5;
 }
