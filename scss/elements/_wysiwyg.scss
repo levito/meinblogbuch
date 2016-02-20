@@ -11,15 +11,22 @@ body.cke_editable {
 img {
   &.align-left,
   &.align-right {
-    max-width: 50%;
-    margin: .7rem 0 1rem;
+    @media #{$mq-max-sm} {
+      float: none;
+    }
+    @media #{$mq-min-sm} {
+      max-width: 50%;
+      margin: .7rem 0 1rem;
+    }
   }
 
-  &.align-left {
-    margin-right: 3rem;
-  }
+  @media #{$mq-min-sm} {
+    &.align-left {
+      margin-right: 3rem;
+    }
 
-  &.align-right {
-    margin-left: 3rem;
+    &.align-right {
+      margin-left: 3rem;
+    }
   }
 }

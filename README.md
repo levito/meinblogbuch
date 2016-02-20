@@ -56,8 +56,16 @@
 * Large: 980 x 980
 * Medium: 320 x 320
 
-#### Inhaltserstellung => Text formats and editors => Basic + Full HTML (? - wenn ohne Imce Modul)
-* Bild: Maximum dimensions: 980 x 980
+#### Inhaltserstellung => Text formats and editors => Basic + Full HTML
+* Bild: Maximum dimensions: 980 x 980 (wenn ohne Imce Modul)
+* Styles dropdown
+  ```
+  img.align-center|Center
+  img.align-left|Left
+  img.align-right|Right
+
+  ```
+
 
 
 ## Kommentar-Einstellungen
