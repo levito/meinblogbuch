@@ -13,6 +13,8 @@
 * Dependencies:
   - Libraries (?)
 
+### [Honeypot](https://www.drupal.org/project/honeypot)
+
 
 ## Settings
 
@@ -50,11 +52,11 @@
   - `.`: Browse files, Browse subfolders
   - `inline-images`: All permissions
 
-#### Bildstile (wenn ohne Imce Modul)
+#### Bildstile
 * Large: 980 x 980
 * Medium: 320 x 320
 
-#### Inhaltserstellung => Text formats and editors => Basic + Full HTML (?)
+#### Inhaltserstellung => Text formats and editors => Basic + Full HTML (? - wenn ohne Imce Modul)
 * Bild: Maximum dimensions: 980 x 980
 
 
