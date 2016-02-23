@@ -9,7 +9,7 @@
 }
 
 .page-container {
-  max-width: 1180px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -96,6 +96,6 @@
   }
 
   @media screen and #{$mq-min-lg} {
-    padding: 0 8.5rem 4.5rem;
+    padding: 0 9rem 4.5rem;
   }
 }

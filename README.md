@@ -18,7 +18,7 @@
 
 ## Settings
 
-### Struktur => Blocklayout
+### /admin/structure/block
 * Suche => Secondary Menu
   - Konfigurieren: Titel anzeigen: nein
 * Fußbereichsmenü => Fußbereich
@@ -31,38 +31,38 @@
 ### /admin/structure/views/view/frontpage
 * Seitennavigation: Erste/Vorherige/Nächste/Letzte: nur Pfeile
 
-### Design => Einstellungen
+### /admin/appearance/settings
 * Logo des Themes verwenden: nein
 
 ### Konfiguration
 
-#### Lokalisierung und Sprache => Date and time formats
+#### /admin/config/regional/date-time
 * Default long date: `l, j. F Y - H:i`
 * Default medium date: `D, d.m.Y - H:i`
 * Default short date: `d.m.Y - H:i`
 
-#### URL-Aliase => Muster
+#### /admin/config/search/path/patterns
 * Inhalt: `[node:title]` (Article, Page)
 * Taxonomie-Begriff: `tag/[term:name]` (Tags)
 
 
-#### Medien => Imce File Manager
+#### /admin/config/media/imce
 * Admin profile
-  - Maximum image dimensions: 980 x 980
+  - Maximum image dimensions: 960 x 960
   - `.`: Browse files, Browse subfolders
   - `inline-images`: All permissions
 
-#### Bildstile
-* Large: 980 x 980
+#### /admin/config/media/image-styles
+* Large: 960 x 960
 * Medium: 320 x 320
 
 #### Inhaltserstellung => Text formats and editors => Basic + Full HTML
-* Bild: Maximum dimensions: 980 x 980 (wenn ohne Imce Modul)
+* Bild: Maximum dimensions: 960 x 960 (wenn ohne Imce Modul)
 * Styles dropdown
   ```
-  img.align-center|Center
-  img.align-left|Left
-  img.align-right|Right
+img.align-center|Center
+img.align-left|Left
+img.align-right|Right
 
   ```
 
@@ -82,3 +82,9 @@
 
 ### /admin/appearance/settings
 * Überprüfungsstatus eines Benutzers in Kommentaren => raus
+
+
+
+## Übersetzungen
+* Welcome to [site:name] => Willkommen bei [site:name]
+
