@@ -5,4 +5,8 @@
  * Functions to support theming in the MeinBlogbuch theme.
  */
 
-use Drupal\Core\Template\Attribute;
+function meinblogbuch_preprocess_form_element_label(&$variables) {
+  // if ($variables['attributes']['for'] == 'edit-keys') {
+  //   $variables['title_display'] = 'before';
+  // }
+}
