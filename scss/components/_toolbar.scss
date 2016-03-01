@@ -20,3 +20,13 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 .quickedit-toolbar-container {
   transition-duration: .4s;
 }
+
+.quickedit-toolbar-container,
+.ui-widget {
+  font-family: Droid sans, Lucida Grande, sans-serif;
+  font-size: 1.5rem;
+}
+
+.quickedit-toolbar-label {
+  padding: .9rem .3rem;
+}

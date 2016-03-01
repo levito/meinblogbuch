@@ -21,14 +21,28 @@
   }
 }
 
-.button {
+.button,
+// reset ui buttons:
+.ui-dialog .button.button,
+.quickedit-button,
+.quickedit-button.quickedit-button.action-save {
   @include button($gray-light, $gray-dark);
   padding: .9rem 2rem;
   border: 0;
   border-radius: 2px;
+
+  // reset ui buttons:
+  font-family: inherit;
+  line-height: normal;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-font-smoothing: auto;
 }
 
-.button--primary {
+.button--primary,
+// reset ui buttons:
+.ui-dialog .ui-dialog-buttonpane .button--primary,
+.quickedit-button.quickedit-button.action-save {
   @include button($gray-dark, $white);
   font-weight: bold;
 }
