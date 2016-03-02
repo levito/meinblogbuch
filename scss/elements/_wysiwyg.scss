@@ -11,17 +11,20 @@ body.cke_editable {
 .cke_widget_inline,
 img {
   &.align-left,
-  &.align-right {
-    @media #{$mq-max-sm} {
-      float: none;
-    }
-    @media #{$mq-min-sm} {
-      max-width: calc(50% - 1.5rem);
-      margin: .7rem 0 1rem;
-    }
+  &.align-right,
+  &.align-center {
+    display: block;
+    margin: 3rem auto;
+    float: none;
   }
 
   @media #{$mq-min-sm} {
+    &.align-left,
+    &.align-right {
+      max-width: calc(50% - 1.5rem);
+      margin: .7rem 0 1rem;
+    }
+
     &.align-left {
       margin-right: 3rem;
       float: left;
@@ -30,10 +33,6 @@ img {
     &.align-right {
       margin-left: 3rem;
       float: right;
-    }
-
-    &.align-center {
-      margin: 3rem auto;
     }
   }
 }
