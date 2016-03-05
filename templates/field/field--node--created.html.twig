@@ -27,10 +27,12 @@
     'field--label-' ~ label_display,
   ]
 %}
-<span{{ attributes.addClass(classes) }}>
-  {%- for item in items -%}
-    <span class="field__date">{{ item.attributes.content|date("d") }}</span>
-    <span class="field__month">{{ item.attributes.content|date("M") }}</span>
-    <span class="field__year">{{ item.attributes.content|date("Y") }}</span>
-  {%- endfor -%}
+<span class="article__created">
+  <span{{ attributes.addClass(classes) }}>
+    {%- for item in items -%}
+      <span class="field__date">{{ item.attributes.content|date("d") }}</span>
+      <span class="field__month">{{ item.attributes.content|date("M") }}</span>
+      <span class="field__year">{{ item.attributes.content|date("Y") }}</span>
+    {%- endfor -%}
+  </span>
 </span>

@@ -11,6 +11,16 @@
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.333;
+
+    .quickedit-form {
+      color: $gray-darker;
+      font-style: normal;
+      text-align: left;
+
+      .container-inline {
+        white-space: nowrap;
+      }
+    }
   }
 
   @media screen and #{$mq-max-lg} {
@@ -26,7 +36,7 @@
   }
 
   @media screen and #{$mq-min-lg} {
-    .field--type-created {
+    .article__created {
       position: absolute;
       bottom: -1.4rem;
       left: -13.5rem;
@@ -36,7 +46,7 @@
       color: $white;
       line-height: 1.333;
       text-align: center;
-      z-index: 1;
+      z-index: 100;
 
       &::before,
       &::after {
