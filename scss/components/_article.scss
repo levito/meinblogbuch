@@ -78,6 +78,16 @@
         font-weight: bold;
         line-height: 1.2;
       }
+
+      // fixes for quickedit mode
+      > .field--type-created {
+        display: block;
+      }
+
+      > .article__created {
+        position: static;
+        padding: 0;
+      }
     }
   }
 }
