@@ -31,6 +31,9 @@
 ### /admin/structure/views/view/frontpage
 * Seitennavigation: Erste/Vorherige/Nächste/Letzte: nur Pfeile
 
+### /admin/structure/types/manage/article/display
+* Tags: Beschriftung: Inline
+
 ### /admin/appearance/settings
 * Logo des Themes verwenden: nein
 
@@ -87,4 +90,5 @@ img.align-right|Right
 
 ## Übersetzungen
 * Welcome to [site:name] => Willkommen bei [site:name]
-
+* Submitted by => Geschrieben von
+* Submitted by @author_name on @date => Geschrieben von @author_name am @date

@@ -83,11 +83,6 @@
       > .field--type-created {
         display: block;
       }
-
-      > .article__created {
-        position: static;
-        padding: 0;
-      }
     }
   }
 }
@@ -124,30 +119,16 @@
   float: right;
   color: $gray;
 
-  .field__label,
-  .field__items,
   .field__item {
     display: inline;
   }
 
   .field__label {
     font-weight: normal;
-
-    &::after {
-      content: ':';
-    }
   }
 
-  .field__item {
-    &::after {
-      content: ',';
-    }
-
-    &:last-of-type {
-      &::after {
-        content: none;
-      }
-    }
+  .field__item:not(:last-of-type)::after {
+    content: ',';
   }
 }
 
