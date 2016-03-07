@@ -31,7 +31,7 @@
 ### /admin/structure/views/view/frontpage
 * Seitennavigation: Erste/Vorherige/Nächste/Letzte: nur Pfeile
 
-### /admin/structure/types/manage/article/display
+### /admin/structure/types/manage/article/display, /admin/structure/types/manage/article/display/teaser
 * Tags: Beschriftung: Inline
 
 ### /admin/appearance/settings

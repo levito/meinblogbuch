@@ -15,50 +15,36 @@
   line-height: 1.333;
 }
 
-.form-item:not(.form-type-checkbox):not(.form-type-radio) {
-  > label {
-    display: block;
+input.form-autocomplete,
+input.form-text,
+input.form-tel,
+input.form-email,
+input.form-url,
+input.form-search,
+input.form-number,
+input.form-color,
+input.form-file,
+input.form-date,
+input.form-time,
+textarea.form-textarea,
+select.form-select {
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .8rem 1.2rem;
+  transition: border-color .2s;
+  border: 1px solid $gray-light;
+  border-radius: 2px;
+  outline: 0;
+  background: $white;
+
+  &:focus {
+    border-color: $gray;
   }
 
-  > input,
-  select,
-  .form-textarea-wrapper {
-    width: 100%;
-    margin-bottom: .5rem;
-
-    .container-inline & {
-      width: auto;
-    }
+  .container-inline & {
+    width: auto;
   }
-
-  // .image-widget-data,
-  > input,
-  select,
-  textarea {
-    padding: .8rem 1.2rem;
-    transition: border-color .2s;
-    border: 1px solid $gray-light;
-    border-radius: 2px;
-    outline: 0;
-    background: $white;
-
-    &:focus {
-      border-color: $gray;
-    }
-  }
-
-  // .image-widget-data {
-  //   position: relative;
-  //   line-height: normal;
-
-  //   .button {
-  //     position: absolute;
-  //     top: -1px;
-  //     left: 100%;
-  //   }
-  // }
 }
-
 
 .form-type-checkbox,
 .form-type-radio {
