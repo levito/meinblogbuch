@@ -59,7 +59,7 @@
 * Large: 960 x 960
 * Medium: 320 x 320
 
-#### Inhaltserstellung => Text formats and editors => Basic + Full HTML
+#### /admin/config/content/formats/manage/basic_html, /admin/config/content/formats/manage/full_html
 * Bild: Maximum dimensions: 960 x 960 (wenn ohne Imce Modul)
 * Styles dropdown
   ```
@@ -69,6 +69,9 @@ img.align-right|Right
 
   ```
 
+#### /admin/config/people/accounts
+* Wer kann Konten registrieren? => Nur Administratoren
+* Konto gesperrt => benachrichtigen => Textkörper: [site:account-name] => [site:name]
 
 
 ## Kommentar-Einstellungen
