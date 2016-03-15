@@ -2,6 +2,7 @@
 
 .page {
   padding: 0 1rem 1rem;
+  transition: padding .5s;
 
   @media screen and #{$mq-min-sm} {
     padding: 0 2rem 1rem;
@@ -36,6 +37,7 @@
 
 .block-system-branding-block {
   padding: 5rem 0 4rem;
+  transition: padding .5s;
   text-align: center;
 
   @media screen and #{$mq-min-md} {
@@ -74,14 +76,14 @@
   $svg-color: uri-encode(unquote('#{$gold-light}'));
 
   margin: 3.5rem -1rem;
-  padding: 1rem;
+  padding: 1px 1rem 1rem;
+  transition: all .5s;
   background-color: $white;
   box-shadow: 0 1px 4px $darken-01;
 
   @media screen and #{$mq-min-sm} {
     margin-right: auto;
     margin-left: auto;
-    padding: 0 1rem;
     border: 1.5rem solid transparent;
     border-radius: .7rem;
     border-image: url('data:image/svg+xml;utf8,\
