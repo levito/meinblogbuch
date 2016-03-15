@@ -1,7 +1,11 @@
 @import '../base/index';
 
 .page {
-  padding: 0 2rem 1rem;
+  padding: 0 1rem 1rem;
+
+  @media screen and #{$mq-min-sm} {
+    padding: 0 2rem 1rem;
+  }
 
   @media screen and #{$mq-min-md} {
     padding: 0 8rem 2rem;
@@ -69,27 +73,32 @@
 .page-container--main {
   $svg-color: uri-encode(unquote('#{$gold-light}'));
 
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-  padding: 0 1rem;
-  border: 1.5rem solid transparent;
-  border-radius: .7rem;
+  margin: 3.5rem -1rem;
+  padding: 1rem;
   background-color: $white;
   box-shadow: 0 1px 4px $darken-01;
-  border-image: url('data:image/svg+xml;utf8,\
-  <svg xmlns="http://www.w3.org/2000/svg"\
-    viewBox="0 0 70 70" width="70" height="70">\
-    <g fill="#{$svg-color}">\
-      <ellipse cx="15" cy="15" rx="4" ry="4"/>\
-      <ellipse cx="35" cy="15" rx="4" ry="4"/>\
-      <ellipse cx="55" cy="15" rx="4" ry="4"/>\
-      <ellipse cx="15" cy="35" rx="4" ry="4"/>\
-      <ellipse cx="55" cy="35" rx="4" ry="4"/>\
-      <ellipse cx="15" cy="55" rx="4" ry="4"/>\
-      <ellipse cx="35" cy="55" rx="4" ry="4"/>\
-      <ellipse cx="55" cy="55" rx="4" ry="4"/>\
-    </g>\
-  </svg>') 25 round;
+
+  @media screen and #{$mq-min-sm} {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1rem;
+    border: 1.5rem solid transparent;
+    border-radius: .7rem;
+    border-image: url('data:image/svg+xml;utf8,\
+    <svg xmlns="http://www.w3.org/2000/svg"\
+      viewBox="0 0 70 70" width="70" height="70">\
+      <g fill="#{$svg-color}">\
+        <ellipse cx="15" cy="15" rx="4" ry="4"/>\
+        <ellipse cx="35" cy="15" rx="4" ry="4"/>\
+        <ellipse cx="55" cy="15" rx="4" ry="4"/>\
+        <ellipse cx="15" cy="35" rx="4" ry="4"/>\
+        <ellipse cx="55" cy="35" rx="4" ry="4"/>\
+        <ellipse cx="15" cy="55" rx="4" ry="4"/>\
+        <ellipse cx="35" cy="55" rx="4" ry="4"/>\
+        <ellipse cx="55" cy="55" rx="4" ry="4"/>\
+      </g>\
+    </svg>') 25 round;
+  }
 
   @media screen and #{$mq-min-md} {
     padding: 0 3.5rem;
