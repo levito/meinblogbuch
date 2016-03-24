@@ -2,8 +2,16 @@
 
 html {
   background: $gray-lighter;
-  font-size: 62.5%;
+  font-size: 56.25%; // 9px
   box-sizing: border-box;
+
+  @media screen and #{$mq-min-sm} {
+    font-size: calc(47.25% + .3vw);
+  }
+
+  @media screen and (min-width: 1800px) {
+    font-size: 81.25%; // 13px
+  }
 }
 
 body {
